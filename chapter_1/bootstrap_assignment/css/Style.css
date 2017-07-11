@@ -1,0 +1,63 @@
+*{
+        box-sizing:border-box;
+}
+/*Only to Parctise the Media Query*/
+@media all and (min-width: 960px) {
+    body{
+        font-size: 14px;
+    }
+}
+ 
+@media all and (max-width: 959px) and (min-width: 600px) {
+    body{
+        font-size: 16px;
+    }
+}
+ 
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body{
+        font-size: 18px;
+    }
+ 
+}
+
+
+.photos{        /*The Idea of this class is to change the area that will receive the image*/
+    height:40vh;
+    margin:0.2vh;
+}
+
+.title{          /* Style of the title */
+    height:15vh;
+    text-align: center;
+
+}
+
+.imgDef{         /*Changing attributes of the image*/
+    width:100%;
+    display:block;
+    margin:0;
+    border-radius: 2%;   
+}
+
+
+h2{                      /*Style of h2 - I putted in em, to make responsive*/
+    font-size: 1.2em;
+}
+
+p{                      /*Style of p - I putted in em, to make responsive*/
+    font-size: 1em;
+    line-height: 1em;
+    display:inline-block;
+    margin:0; 
+}
+
+.pPhotos{                /* Style of the subtitle of the photo */
+    color: grey;
+}
+
+
+a{                      /* Style of the link */
+    float: right;
+    padding-right: 0;
+}

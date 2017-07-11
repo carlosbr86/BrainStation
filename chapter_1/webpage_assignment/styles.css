@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+/* START CODING BELOW */
+/* Making the site responsive, media query: Change the size of the font-size */
+
+@media all and (min-width: 960px) {
+    body{
+        font-size: 18px;
+    }
+}
+ 
+@media all and (max-width: 959px) and (min-width: 600px) {
+    body{
+        font-size: 14px;
+    }
+}
+ 
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body{
+        font-size: 10px;
+    }
+ 
+}
+/*Logo*/
+#logo{
+    background-color:rgba(0,0,0,0.5);
+    width:100vw; 
+    height: 10vh;
+    position:absolute;
+    /*border: solid 2px red;    */
+    position:fixed;
+}
+#imgLogo{
+    width:auto; 
+    height: 10vh;
+    position:fixed;
+}
+/*Background*/
+#imgComputer{
+    /*background-image: url(" ./assets/images/header-background.jpg") ;*/
+    position:absolute;
+    /*border: solid 2px green;*/
+    max-width: 100vw;
+    max-height: 60vh;
+    width: 100vw;
+    height: 60vh;
+    overflow: auto; 
+    z-index: -1;
+}
+
+#imgBlank{           /*I created a invisble block, with the same size of the "background". Only to control others structures*/
+    width: 100vw;    /*I tried anothers way, but I coudn't*/
+    height: 60vh;
+    overflow: auto; 
+}
+
+#title{
+    color:#2b95fd;
+    font-size: 3em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 25vw; 
+    z-index: 1;
+}
+/*Side Bar*/
+.sideBar{
+    display:inline-block;
+    color:#3f51b5;
+    vertical-align: top;
+    box-sizing:border-box;
+    /*border: solid 2px deeppink;*/
+    font-size: 1.2em;
+    width:22vw;
+    height: 40vw;
+    margin:0%;
+    list-style-type: none;
+    text-align: left;
+      overflow: none; 
+  }
+  
+
+
+.bottomBar{
+    display:inline-block;
+    color: black;
+    vertical-align: top;
+
+    border-bottom  : solid 1px black;
+    margin:0%;
+    width:75vw;
+    /*height: 20vh;*/
+  }
+
+.miniBox{
+    display:inline-block;
+    color: black;
+    border-top: solid 2px BLACK;
+    border-left: solid 2px BLACK;
+    border-right: solid 2px BLACK;
+    /*border-bottom: solid 2px BLACK;*/
+    vertical-align: top;
+    padding: 1%;
+    margin-right: 1%;
+    width: 23%;
+    height:100%;
+    box-sizing:border-box;
+    border-radius: 10 px;
+}
+
+  li:hover{                    /*Effect on the list;*/
+      border: gray;
+      background-color: lightgray;
+      border-radius: 3px;
+      border: 10px;
+      line-height: 4vw; 
+  }
+
+  li{                                
+      border-radius: 3px;
+      border: 10px;
+      line-height: 4vw; 
+      font-size: 0.8em;
+      text-align: left;
+  }
+
+
+
+
+h2{
+     font-size: 1.5em;
+     color: #3f51b5;
+}
+
+h3{ 
+    font-size: 1.1em;
+    margin:0;
+    height:15.7vh;
+}
+
+
+
