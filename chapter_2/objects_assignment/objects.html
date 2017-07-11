@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./objects.js" > </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="./objects.css" type="text/css">
+
+    <title>Free Your Mind!</title>
+
+
+</head>
+
+<body>
+    <nav class="row navBar">
+       <a href="HomePage.html"> <img src="./free.jpg" height="40"></img></a>
+        <!--<form class="butNavBar" action="http://google.com">
+            <input type="submit" name="createNewJournal" value="New Journal" />
+        </form>
+        <form class="butNavBar" action="http://google.com">
+            <input type="submit" name="search" value="search" />
+        </form>
+        <form class="butNavBar" action="http://google.com">
+            <input type="submit" name="delete" value="delete" />
+        </form>-->
+    </nav>
+        <div class="row">
+            <aside class="col-sm-4">
+                <form id="addForm">
+                    <input id="textInput1" name="title" type="text" placeholder="Type the title!" />
+                    <input id="textInput2" name="author" type="text" placeholder="Who is the author?" />
+                    <textarea id="textInput3" name="content" rows="5" cols="30" id="popup_prompt" placeholder="Type your ideas! Free your mind!"></textarea>
+                    <input id="submitArticle" type="button"  value="Submit" name="submitArticle" />
+                    <br>
+                </form>
+                <div>
+                    <!--BOTOES-->
+                    <h2>Extra Functions: </h2><br>
+                    <form>
+                        <input type="button" id='showAll' value="Show All Articles" name="showAll" /><br><br>
+                    </form>
+                    <form>
+                        <input type="text" name="tagToRemove" placeholder="Remove with this TAG" />
+                        <input type="button" id="tagToRemoveButton" value="Remove" name="tagToRemoveButton" /><br><br>
+                    </form>
+                    <form>
+                        <input type="text" name="searchWithTag" placeholder="Find with this TAG" />
+                        <input type="button" id="searchWithTagButton" value="Tag Search" name="searchWithTagButton" /><br><br>
+                    </form>
+                    <form>
+                        <input type="text" name="searchWithString" placeholder="Find with this String" />
+                        <input type="button" id="searchWithStringButton" value="String Search" name="searchWithStringButton" /><br><br>
+                    </form>
+                    <fieldset id='listTitles'>
+                            <div>
+                                <button id="showSelectedButton" type="submit">Show Selecteds</button>
+                            </div>
+                    </fieldset> 
+                </div>
+            </aside>
+ 
+    <main>
+        <div class="col-sm-8  mainContent">
+            <div id='displayTemp'>
+                <h2 id='textPreview'>Preview of the last item added: </h2>
+                <h1 id="title1">Title </h1>
+                <h2 id="author1"> Author</h2>
+                <p id="content1">Content </p>
+            </div>
+            <div>
+                <h2 id='textPreview'> Display:<br> </h2>
+                <p class="allArticles"> </p>
+            </div>
+            <div id="displayAll">
+                <p id="totalText"> </p>
+            </div>
+        </div>
+    </main>
+</div> 
+  
+    <!--####################################JavaScript##################################-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
