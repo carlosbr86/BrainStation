@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+.content{
+    display: inline;
+    position: relative;
+    right: 10px;
+}
+
+#textInput1, #textInput2{
+    display: block;
+}
+
+#addForm{
+    box-sizing: border-box;
+    margin: 1%;
+
+}
+h1, #title{
+    color: black;
+    font-size: 1.5em;
+    display: block;
+}
+
+h2{
+    color: black;
+    font-size: 1em;
+    display: block;
+
+}
+#author{
+    color: black;
+    font-size: 1em;
+    display: block;
+    font-style: italic;
+}
+p, #content{
+    color:black;
+    font-size: 1em;
+    display: block;
+}
+
+#displayAll,{
+    box-sizing: border-box;
+    border: green solid 1px;
+    margin: 2%;
+}
+.navBar{
+    height: 5%;
+    background: rgba(255, 255, 255, 0.6);
+    
+}
+
+.butNavBar{
+    display: inline-block;
+    margin: 3px 2%;
+
+}
+aside{
+    /*background-color: lightgray;*/
+}
+body{
+background-image: url("wooden.jpg");
+background-size:cover;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+font-weight: bolder;
+    /*overflow-x: ;
+    */
+}
+
+img{
+    margin: 0 2%;
+    float: right;
+}
+
+#listTitles{
+        border: orange solid 2px;
+        width: 60%;
+}
+
+#textPreview, #textDisplay{
+    color: black;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    text-decoration: underline;
+}
+
+
+#displayTemp{
+    box-sizing: border-box;
+    border: black 5px;
+    margin: 2%;
+    
+}
+#box{
+    box-sizing: border-box;
+    border: black 5px;
+    margin: 2%;
+    
+}

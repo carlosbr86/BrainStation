@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--BootStrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--BootStrap-->
+    <title>Document</title>
+    <style> 
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        .homepage-hero-module{
+            width: 100%;
+            height: auto;
+            position: relative;
+            overflow: none;
+        }
+        #mainPageTitle{
+            position:absolute;
+            top:45%;
+            left:35%;
+            z-index: 100;
+            font-size:50px;
+            font-family: Courier New, Courier, monospace;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .video-contatiner{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            z-index: 0;
+        }
+    </style>
+    
+</head>
+<body>
+<div class="homepage-hero-module">
+    <div class="video-container">
+        <div class="filter"></div>
+        <video autoplay loop class="fillWidth" width="100%" height="auto">
+            <source src="./10K_Feet/10K_Feet.mp4" type="video/mp4"  />
+        </video>
+        <a href="./objects.html"><h1 id="mainPageTitle"> Free Your Mind! </h1></a>
+        <div class="poster hidden">
+            <!--<img src="./10K_Feet/10K_Feet.jpg"  alt="">-->
+        </div>
+    </div>
+</div>
+</body>
+</html>
