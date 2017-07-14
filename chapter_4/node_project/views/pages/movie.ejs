@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles.css">        
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="movie-details">
+            <% for(let i=0;i<dataObject.length;i++){ %>
+                <% if (movieId == dataObject[i].id){ %>
+                    <h1 class="text-center"> <%= dataObject[i].title %> </h1>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <img class="movie-poster" src=<%= dataObject[i].poster  %> />
+                        </div>
+                        <div class="col-xs-7">
+                            <table class="table">
+                                <!--For in Loop to find Propoerties......-->
+                                <% for (let prop in dataObject[i]){ %>
+                                <tr>
+                                    <td> <%= prop %></td>
+                                    <td> <%= dataObject[i][prop] %></td>
+                                </tr>
+                                <% } %>
+                            </table>
+                        </div>    
+                    </div>
+                <% } %>
+            <% } %>
+
+
+                <div class="row">
+                    <div class=buttons>
+                        <a class="btn btn-primary" href='http://localhost:8080/' >Back</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>  
+</html>
