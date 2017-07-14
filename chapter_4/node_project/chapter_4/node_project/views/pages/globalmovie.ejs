@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles.css">        
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="movie-details">
+                    <h1 class="text-center"> <%= dataObject.Title %> </h1>
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <img class="movie-poster" src=<%= dataObject.Poster  %> />
+                        </div>
+                        <div class="col-xs-7">
+                            <table class="table">
+                                <!--For in Loop to find Propoerties......-->
+                                <% for (let prop in dataObject){ %>
+                                <tr>
+                                    <td> <%= prop %></td>
+                                    <td> <%= dataObject[prop] %></td>
+                                </tr>
+                                <% } %>
+                            </table>
+                        </div>    
+                    </div>
+                <div class="row">
+                    <div class=buttons>
+                        <a class="btn btn-primary" href='http://localhost:8080/' >Back</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </body>  
+</html>

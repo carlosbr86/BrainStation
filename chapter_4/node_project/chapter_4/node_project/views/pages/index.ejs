@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/styles.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>      
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="text-center">Movie Database</h1>
+            <form id="addForm">
+                    <input type="text" id="input__filmSearch" name="film"  placeholder="Movie Title" />
+                    <input type="button" id="btn__filmSearch" value=" Local Search " name="searchFilm" />
+            </form>
+            <form id="addForm2">
+                    <input type="text" id="input__globalfilmSearch" name="film"  placeholder="Movie Title" />
+                    <input type="button" id="btn__globalfilmSearch" value="Global Search" name="searchFilm" />
+            </form>
+            <% for (let i=0;i<dataObject.length;i++){  %>
+            <a class="movie-link" href=<%= `http://localhost:8080/movie/${dataObject[i].id}` %>>
+            <div class="media movie-list-item">
+                <div class="media-left">
+                    <div class="poster-container">
+                        <img class="media-object movie-poster" src=<%= dataObject[i].poster  %> />
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">
+                        <%= dataObject[i].title %>
+                        <span class="badge"><%= dataObject[i].imdbRating%></span>
+                    </h4>
+                    <div>
+                        <%= dataObject[i].plot %>
+                    </div>
+                    <div class="released-date">
+                        Released: <%= dataObject[i].released %>
+                    </div>
+                </div>
+            </div>
+            </a>
+           
+            <% }  %>
+
+        </div>
+
+        <script>    
+            $(document).ready(function(){
+                $('#btn__filmSearch').click(function () {
+                    let filmToFind = $("input[id = 'input__filmSearch']").val();
+                    console.log(filmToFind);
+                    if(filmToFind){
+                        location.href = `http://localhost:8080/search/${filmToFind}/`;
+                    }
+                })
+                $('#btn__globalfilmSearch').click(function () {
+                    let filmToFind = $("input[id = 'input__globalfilmSearch']").val();
+                    console.log(filmToFind);
+                    if(filmToFind){
+                        location.href = `http://localhost:8080/globalsearch/${filmToFind}/`;
+                    }
+                })
+            })
+        </script>
+
+    </body>
+</html>
+
