@@ -1,0 +1,22 @@
+.done {
+  text-decoration: line-through;
+  color:  lightgreen;
+}
+
+body{
+  background: lightcoral;
+}
+.visibility{
+  display: none;
+}
+
+li{
+  color:lightcoral;
+}
+
+.right{
+  float:right;
+  z-index: 1000;
+  color: darkred;
+}
+
