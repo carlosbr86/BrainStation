@@ -1,0 +1,16 @@
+{
+  "name": "rest-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getStockData.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.16.1",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}

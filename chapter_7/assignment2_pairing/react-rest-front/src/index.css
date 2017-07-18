@@ -1,0 +1,28 @@
+body {
+  margin: 20;
+  padding: 0;
+  font-family: sans-serif;
+  background: lightblue;
+}
+
+.d3{
+  width: 700;
+  height: 270;
+}
+
+.inline {
+  display: inline;
+}
+
+.App{
+  margin: 100;
+  width: 600;
+
+  height: auto;
+  color: navy
+}
+
+.form{
+  height: auto;
+
+}

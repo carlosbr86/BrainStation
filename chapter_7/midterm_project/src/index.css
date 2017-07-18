@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color:#FFFFFF;
+}
+
+.App {
+  background-color: #2F4B4C ;
+  height: 400px;
+  width: 250px;
+  margin: 5px;
+
+}
+
+.link{
+  background-color: #42F2F7;
+  color: #1EA896;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  font-size: 1.6em;
+}
+
+.play:hover{
+  color:  #60BAD6
+}
+.otherComponent:visited{
+  color:  #1C77C3
+}
+
+.musicNameDisplay{
+  text-align: center;
+  background: #4C5454;
+  color: #42F2F7;
+  margin: 0px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.5em
+}
+
+
+
+.otherComponent{
+  color: #42F2F7;
+  width: 100%;
+  height: 75%;
+    margin: 0px;
+  padding: 15px;
+}
+
+.buttonsBar{
+  background: #4C5454;
+  position: center;
+  height: 12%;
+  display: block;
+}
+
+.buttons{
+  position: relative;
+  left: 18%;
+  color: #FF715B;
+}
+
+.linkSong:hover{
+  color:  #1C77C3;
+  background-color: #4B6768;
+}
+.linkSong a:hover{
+  color:  #1C77C3
+}
+
+.linkSong a:link{
+  color:  #94E4FC;
+}
+
+.linkSong a{
+  color:  #94E4FC;
+}
+.linkSong a:visited{
+  color:  #94E4FC
+}
